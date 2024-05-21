@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: bisque;
+        }
+        #landing-page {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 2rem 4rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        #start-button {
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        #start-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        #start-button:active {
+            background-color: #004494;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div id="landing-page">
+        <h1>Quiz App</h1>
+        <button id="start-button">Start</button>
+    </div>
+    <script>
+        document.getElementById('start-button').addEventListener('click', function() {
+            window.location.href = 'quiz.html';
+        });
+    </script>
+</body>
+</html>
