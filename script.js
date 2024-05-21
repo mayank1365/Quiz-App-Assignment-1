@@ -172,12 +172,12 @@ function restartQuiz() {
 }
 
 function goToHomePage() {
-    window.location.href = "index.html"; // Assuming your index.html file is in the same directory
+    window.location.href = "index.html";
 }
 
 function showScore(){
     resetState();
-    questionElement.innerHTML = "You Scored " + score + " points out of " + questions.length * 10 + " points!";
+    questionElement.innerHTML = "You Scored " + score + " points out of " + "100 points!";
     document.getElementById("restart-btn").style.display = "block";
     document.getElementById("home-btn").style.display = "block";
 }

@@ -18,15 +18,6 @@ body{
     padding: 30px;
 }
 
-.app h1{
-    font-size: 25px;
-    color: #333;
-    font-weight: 600;
-    border-bottom: 1px solid #000000;
-    padding-bottom: 30px;
-
-}
-
 .quiz-container{
     padding: 20px 0;
 }
@@ -81,7 +72,7 @@ body{
 
 #restart-btn,
 #home-btn {
-    background-color: darkblue;
+    background-color: darkkhaki;
     color: #fff;    
     font-weight: 500;
     width: 150px;
@@ -90,12 +81,11 @@ body{
     margin: 20px auto 0;
     border-radius: 4px;
     cursor: pointer;
-    display: none; /* Initially hide the buttons */
+    display: none; 
 }
 
-/* Styling for hover effect */
 #next-btn:hover,
 #restart-btn:hover,
 #home-btn:hover {
-    background-color: #0056b3;
+    background-color: green;
 }
