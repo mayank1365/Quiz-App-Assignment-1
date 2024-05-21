@@ -78,3 +78,24 @@ body{
 .incorrect {
     background: red;
 }
+
+#restart-btn,
+#home-btn {
+    background-color: darkblue;
+    color: #fff;    
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none; /* Initially hide the buttons */
+}
+
+/* Styling for hover effect */
+#next-btn:hover,
+#restart-btn:hover,
+#home-btn:hover {
+    background-color: #0056b3;
+}

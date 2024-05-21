@@ -154,7 +154,7 @@ function selectAnswer(e){
     });
 
     setTimeout(handleNextQuestion, 1000);
-}
+}   
 
 function handleNextQuestion(){
     currentQuestionIndex++;
@@ -165,10 +165,29 @@ function handleNextQuestion(){
     }
 }
 
+function restartQuiz() {
+    startQuiz();
+    document.getElementById("restart-btn").style.display = "none";
+    document.getElementById("home-btn").style.display = "none";
+}
+
+function goToHomePage() {
+    window.location.href = "index.html"; // Assuming your index.html file is in the same directory
+}
+
 function showScore(){
     resetState();
     questionElement.innerHTML = "You Scored " + score + " points out of " + questions.length * 10 + " points!";
+    document.getElementById("restart-btn").style.display = "block";
+    document.getElementById("home-btn").style.display = "block";
 }
+
+const restartButton = document.getElementById("restart-btn");
+const homeButton = document.getElementById("home-btn");
+
+restartButton.addEventListener("click", restartQuiz);
+homeButton.addEventListener("click", goToHomePage);
+
 
 startQuiz();
 
